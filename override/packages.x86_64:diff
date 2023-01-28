@@ -1,0 +1,42 @@
+--- packages.x86_64	2023-01-28 12:53:42.272412918 -0400
++++ packages.x86_64_	2023-01-28 12:57:20.574396716 -0400
+@@ -1,15 +1,11 @@
+ alsa-utils
+ amd-ucode
+-arch-install-scripts
+-archinstall
+ b43-fwcutter
+ base
+ bind
+ brltty
+ broadcom-wl
+ btrfs-progs
+-clonezilla
+-cloud-init
+ cryptsetup
+ darkhttpd
+ ddrescue
+@@ -54,7 +50,6 @@
+ livecd-sounds
+ lsscsi
+ lvm2
+-lynx
+ man-db
+ man-pages
+ mc
+@@ -86,7 +81,6 @@
+ ppp
+ pptpclient
+ pv
+-qemu-guest-agent
+ refind
+ reflector
+ reiserfsprogs
+@@ -112,7 +106,6 @@
+ usbmuxd
+ usbutils
+ vim
+-virtualbox-guest-utils-nox
+ vpnc
+ wireless-regdb
+ wireless_tools
