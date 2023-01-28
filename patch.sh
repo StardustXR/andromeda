@@ -3,6 +3,7 @@
 set -euo pipefail
 IFS=$'\n'
 
+profile=releng
 verbose=false
 
 for arg in $@; do
@@ -16,7 +17,6 @@ done
     rm -rf profile/
 }
 
-profile=releng
 echo "Copying profile $profile..."
 cp -r /usr/share/archiso/configs/$profile/ profile/
 
