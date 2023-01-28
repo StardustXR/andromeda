@@ -26,10 +26,13 @@ done
 echo "Copying profile $profile..."
 cp -r /usr/share/archiso/configs/$profile/ profile/
 
-echo "Applying overrides..."
 #// apply overrides and patches \\\\\\\\# 
 pushd override/ &>/dev/null
-find . -type f -not -name "*:diff" -exec cp {} ../profile/{} \;
-find . -type f -name "*:diff" -exec sh -c "patch -f $($verbose || echo '-s') ../profile/\$(basename {} :diff) {}" \;
+echo "Applying overrides..."
+find . -type f -not -name "*:diff" -exec cp {} ../profile/{} \; $($verbose && echo -print)
+
+echo "Applying patches..."
+find . -type f -name "*:diff" -exec \
+    sh -c 'patch -fs ../profile/$(basename {} :diff) {}' \; $($verbose && echo -print)
 popd &>/dev/null
 #\\\\\\\\ apply overrides and patches //#
