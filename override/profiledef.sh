@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="andromeda"
+iso_name="andromeda-rootfs"
 iso_label="ANDROMEDA_$(date +%Y%m)"
 iso_publisher="Stardust XR <https://stardustxr.org>"
 iso_application="Andromeda - XR Development Environment"
