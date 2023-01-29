@@ -1,99 +1,177 @@
---- /usr/share/archiso/configs/releng/packages.x86_64	2022-12-28 05:06:16.000000000 -0400
-+++ packages.x86_64_	2023-01-28 17:58:47.753920066 -0400
-@@ -1,20 +1,15 @@
+--- packages.x86_64	2023-01-29 03:54:23.910118743 -0400
++++ packages.x86_64_	2023-01-29 03:58:04.600102364 -0400
+@@ -1,42 +1,55 @@
++acpi
++acpid
++adb
  alsa-utils
  amd-ucode
 -arch-install-scripts
 -archinstall
++avahi
  b43-fwcutter
  base
++bcachefs-tools-git
  bind
++bluez
++bluez-utils
  brltty
  broadcom-wl
  btrfs-progs
 -clonezilla
 -cloud-init
  cryptsetup
++cups
  darkhttpd
  ddrescue
  dhclient
 -dhcpcd
++dialog
  diffutils
  dmidecode
  dmraid
-@@ -47,7 +42,7 @@
+ dnsmasq
++dnsutils
+ dosfstools
+ e2fsprogs
+ edk2-shell
+ efibootmgr
++eigen
+ espeakup
+ ethtool
+ exfatprogs
+ f2fs-tools
+ fatresize
++ffmpeg
+ fsarchiver
++git
++glslang
+ gnu-netcat
+ gpart
+ gpm
+ gptfdisk
+ grml-zsh-config
+ grub
++gvfs
++gvfs-smb
++harfbuzz
+ hdparm
+ hyperv
++inetutils
+ intel-ucode
+ irssi
+ iw
+@@ -46,13 +59,18 @@
+ less
  lftp
  libfido2
++libusb
  libusb-compat
 -linux
-+linux-zen
++libvncserver
++libxcb
++libxkbcommon
  linux-atm
  linux-firmware
  linux-firmware-marvell
-@@ -112,7 +106,6 @@
++linux-zen
+ livecd-sounds
+ lsscsi
++luajit
+ lvm2
+ lynx
+ man-db
+@@ -61,43 +79,65 @@
+ mdadm
+ memtest86+
+ memtest86+-efi
++mesa
++mesa-utils
+ mkinitcpio
+ mkinitcpio-archiso
+ mkinitcpio-nfs-utils
+ modemmanager
+ mtools
++mupdf
+ nano
+ nbd
+ ndisc6
++networkmanager
++network-manager-applet
+ nfs-utils
+ nilfs-utils
++nix
+ nmap
+ ntfs-3g
++nvidia
++nvidia-utils
+ nvme-cli
+-open-iscsi
+-open-vm-tools
++openal
+ openconnect
++open-iscsi
+ openssh
++open-vm-tools
+ openvpn
++openxr
++os-prober
+ partclone
+ parted
+ partimage
++patch
+ pcsclite
++pipewire
++pipewire-alsa
++pipewire-jack
++pipewire-pulse
++plasma
+ ppp
+ pptpclient
+ pv
++python
+ qemu-guest-agent
+ refind
+ reflector
+ reiserfsprogs
+ rp-pppoe
+ rsync
++rustup
+ rxvt-unicode-terminfo
+ screen
++sddm
++sdl2
+ sdparm
+ sg3_utils
+ smartmontools
+ sof-firmware
++sqlite3
+ squashfs-tools
+ sudo
+ syslinux
+@@ -111,13 +151,24 @@
+ usb_modeswitch
  usbmuxd
  usbutils
++v4l-utils
  vim
 -virtualbox-guest-utils-nox
  vpnc
++vulkan-icd-loader
++vulkan-intel
++wayland
++wget
  wireless-regdb
  wireless_tools
-@@ -121,3 +114,58 @@
- xfsprogs
- xl2tpd
- zsh
-+networkmanager
-+network-manager-applet
-+bluez
-+bluez-utils
-+cups
-+xf86-video-qxl
-+xf86-video-intel
-+xf86-video-amdgpu
-+nvidia
-+nvidia-utils
-+mesa
-+mesa-utils
-+xorg
-+bcachefs-tools-git
-+wayland
-+rustup
-+patch
-+sqlite3
-+openal
-+sdl2
-+luajit
-+harfbuzz
-+libxkbcommon
-+ffmpeg
-+libvncserver
-+mupdf
-+adb
-+openxr
-+nix
-+python
-+vulkan-intel
-+vulkan-icd-loader
-+eigen
-+glslang
-+libusb
-+v4l-utils
-+libxcb
+ wpa_supplicant
+ wvdial
 +xcb-util
-+git
-+dnsutils
-+avahi
-+dialog
-+acpi
-+acpid
-+gvfs
-+gvfs-smb
-+inetutils
-+os-prober
-+pipewire
-+pipewire-jack
-+pipewire-alsa
-+pipewire-pulse
-+wget
 +xdg-user-dirs
 +xdg-utils
++xf86-video-amdgpu
++xf86-video-intel
++xf86-video-qxl
+ xfsprogs
+ xl2tpd
++xorg
+ zsh
