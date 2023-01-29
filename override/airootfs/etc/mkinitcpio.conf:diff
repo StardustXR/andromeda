@@ -1,0 +1,15 @@
+--- mkinitcpio.conf	2023-01-29 03:27:25.147889445 -0400
++++ mkinitcpio.conf_	2023-01-29 03:28:39.464889378 -0400
+@@ -57,10 +57,10 @@
+ #COMPRESSION="gzip"
+ #COMPRESSION="bzip2"
+ #COMPRESSION="lzma"
+-COMPRESSION="xz"
++#COMPRESSION="xz"
+ #COMPRESSION="lzop"
+ #COMPRESSION="lz4"
+-#COMPRESSION="zstd"
++COMPRESSION="zstd"
+ 
+ # COMPRESSION_OPTIONS
+ # Additional options for the compressor
