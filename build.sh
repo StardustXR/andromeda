@@ -4,14 +4,20 @@
 set -euo pipefail
 IFS=$'\n'
 
+function has_tmpfs() {
+    mount | awk '{if ($3 == "$PWD/work/") { exit 0}} ENDFILE{exit -1}'
+}
+
 chaoticaur_key=FBA220DFC880C036
 
 read -p 'update profile before building? (Y/n)' res
 [ "$res" = n ] || [ "$res" = N ] || ./patch.sh && echo
 
-mkdir -p work/
-echo 'Mounting work/ as tmpfs...'
-sudo mount -t tmpfs tmpfs work/
+has_tmpfs || {
+    mkdir -p work/
+    echo 'Mounting work/ as tmpfs...'
+    sudo mount -t tmpfs tmpfs work/
+}
 
 $(pacman-key --list-sigs $chaoticaur_key &>/dev/null) || {
     echo 'PGP key for Chaotic-AUR not installed, receiving and signing...'
@@ -24,6 +30,7 @@ $(pacman-key --list-sigs $chaoticaur_key &>/dev/null) || {
 
 sudo mkarchiso -v -w work/ profile/
 
-[ mount | awk '{if ($3 == "$PWD/work/") { exit 0}} ENDFILE{exit -1}' ]
-echo 'Unmounting work/...'
-sudo umount work/
+has_tmpfs && {
+    echo 'Unmounting work/...'
+    sudo umount work/
+}
