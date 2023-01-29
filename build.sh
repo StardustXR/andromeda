@@ -21,4 +21,5 @@ $(pacman-key --list-sigs $chaoticaur_key &>/dev/null) || {
 
 #? fallback to standard filesystem if there's less than 8GB available in tmpfs
 [ $(df work --output=avail | tail -n1) -lt 8589935 ] && sudo umount work/
+
 sudo mkarchiso -v -w work/ profile/
