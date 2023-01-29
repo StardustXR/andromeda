@@ -4,6 +4,9 @@
 set -euo pipefail
 IFS=$'\n'
 
+read -p 'update profile before building? (Y/n)' res
+[ $res != n ] && [ $res != N ] && ./patch.sh && echo
+
 mkdir -p work/
 sudo mount -t tmpfs tmpfs work/
 
