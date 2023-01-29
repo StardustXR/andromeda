@@ -30,14 +30,6 @@
  linux-atm
  linux-firmware
  linux-firmware-marvell
-@@ -86,7 +81,6 @@
- ppp
- pptpclient
- pv
--qemu-guest-agent
- refind
- reflector
- reiserfsprogs
 @@ -112,7 +106,6 @@
  usbmuxd
  usbutils
