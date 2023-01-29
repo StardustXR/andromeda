@@ -1,6 +1,6 @@
 --- packages.x86_64	2023-01-29 14:58:36.236979227 -0400
-+++ packages.x86_64_0	2023-01-29 15:03:10.576978980 -0400
-@@ -1,42 +1,54 @@
++++ packages.x86_64_	2023-01-29 15:40:48.261976954 -0400
+@@ -1,58 +1,84 @@
 +acpi
 +acpid
 +adb
@@ -8,6 +8,7 @@
  amd-ucode
 -arch-install-scripts
 -archinstall
++ark
 +avahi
  b43-fwcutter
  base
@@ -31,17 +32,21 @@
  dmraid
  dnsmasq
 +dnsutils
++dolphin
  dosfstools
++dragon
  e2fsprogs
  edk2-shell
  efibootmgr
 +eigen
++elisa
  espeakup
  ethtool
  exfatprogs
  f2fs-tools
  fatresize
 +ffmpeg
++firefox
  fsarchiver
 +git
 +glslang
@@ -53,6 +58,7 @@
  grub
 +gvfs
 +gvfs-smb
++gwenview
 +harfbuzz
  hdparm
  hyperv
@@ -60,7 +66,12 @@
  intel-ucode
  irssi
  iw
-@@ -46,13 +58,18 @@
+ iwd
+ jfsutils
++kate
++kbackup
+ kitty-terminfo
++konsole
  less
  lftp
  libfido2
@@ -80,7 +91,7 @@
  lvm2
  lynx
  man-db
-@@ -61,43 +78,65 @@
+@@ -61,43 +87,66 @@
  mdadm
  memtest86+
  memtest86+-efi
@@ -107,6 +118,7 @@
  nvme-cli
 -open-iscsi
 -open-vm-tools
++okular
 +openal
  openconnect
 +open-iscsi
@@ -148,7 +160,7 @@
  squashfs-tools
  sudo
  syslinux
-@@ -111,13 +150,24 @@
+@@ -111,13 +160,24 @@
  usb_modeswitch
  usbmuxd
  usbutils
