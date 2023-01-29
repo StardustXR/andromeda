@@ -1,0 +1,12 @@
+NAME="Andromeda"
+PRETTY_NAME="Andromeda"
+ID=andromeda
+ID_LIKE=arch
+BUILD_ID=rolling
+ANSI_COLOR="38;2;23;147;209"
+HOME_URL="https://stardustxr.org/"
+DOCUMENTATION_URL="https://stardustxr.org/"
+SUPPORT_URL="https://stardustxr.org/"
+BUG_REPORT_URL="https://stardustxr.org/"
+PRIVACY_POLICY_URL="https://terms.archlinux.org/docs/privacy-policy/"
+LOGO=none
