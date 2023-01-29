@@ -10,7 +10,7 @@ function has_tmpfs() {
 
 chaoticaur_key=FBA220DFC880C036
 
-read -p 'update profile before building? (Y/n)' res
+read -p 'update profile before building? (Y/n) ' res
 [ "$res" = n ] || [ "$res" = N ] || ./patch.sh && echo
 
 has_tmpfs || {
