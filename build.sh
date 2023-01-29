@@ -23,3 +23,7 @@ $(pacman-key --list-sigs $chaoticaur_key &>/dev/null) || {
 [ $(df work --output=avail | tail -n1) -lt 8589935 ] && sudo umount work/
 
 sudo mkarchiso -v -w work/ profile/
+
+[ mount | awk '{if ($3 == "$PWD/work/") { exit 0}} ENDFILE{exit -1}' ]
+echo 'Unmounting work/...'
+sudo umount work/
