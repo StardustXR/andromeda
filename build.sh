@@ -8,6 +8,7 @@ read -p 'update profile before building? (Y/n)' res
 [ "$res" = n ] || [ "$res" = N ] || ./patch.sh && echo
 
 mkdir -p work/
+echo 'Mounting work/ as tmpfs...'
 sudo mount -t tmpfs tmpfs work/
 
 #? fallback to standard filesystem if there's less than 4GB available in tmpfs
