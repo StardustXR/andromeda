@@ -11,7 +11,7 @@ mkdir -p work/
 echo 'Mounting work/ as tmpfs...'
 sudo mount -t tmpfs tmpfs work/
 
-#? fallback to standard filesystem if there's less than 4GB available in tmpfs
-[ $(df work --output=avail | tail -n1) -lt 4098526 ] && sudo umount work/
+#? fallback to standard filesystem if there's less than 8GB available in tmpfs
+[ $(df work --output=avail | tail -n1) -lt 8589935 ] && sudo umount work/
 
 sudo mkarchiso -v -w work/ profile/
