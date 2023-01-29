@@ -1,0 +1,10 @@
+--- pacman.conf	2023-01-28 13:10:59.856335911 -0400
++++ pacman.conf_	2023-01-28 17:35:42.539157121 -0400
+@@ -99,3 +99,6 @@
+ #[custom]
+ #SigLevel = Optional TrustAll
+ #Server = file:///home/custompkgs
++
++[chaotic-aur]
++Server = https://geo-mirror.chaotic.cx/$repo/$arch
+\ No newline at end of file
