@@ -1,6 +1,6 @@
---- packages.x86_64	2023-01-28 12:53:42.272412918 -0400
-+++ packages.x86_64_	2023-01-28 12:57:20.574396716 -0400
-@@ -1,15 +1,11 @@
+--- /usr/share/archiso/configs/releng/packages.x86_64	2022-12-28 05:06:16.000000000 -0400
++++ packages.x86_64_	2023-01-28 17:58:47.753920066 -0400
+@@ -1,20 +1,15 @@
  alsa-utils
  amd-ucode
 -arch-install-scripts
@@ -16,14 +16,20 @@
  cryptsetup
  darkhttpd
  ddrescue
-@@ -54,7 +50,6 @@
- livecd-sounds
- lsscsi
- lvm2
--lynx
- man-db
- man-pages
- mc
+ dhclient
+-dhcpcd
+ diffutils
+ dmidecode
+ dmraid
+@@ -47,7 +42,7 @@
+ lftp
+ libfido2
+ libusb-compat
+-linux
++linux-zen
+ linux-atm
+ linux-firmware
+ linux-firmware-marvell
 @@ -86,7 +81,6 @@
  ppp
  pptpclient
@@ -40,3 +46,62 @@
  vpnc
  wireless-regdb
  wireless_tools
+@@ -121,3 +114,58 @@
+ xfsprogs
+ xl2tpd
+ zsh
++networkmanager
++network-manager-applet
++bluez
++bluez-utils
++cups
++xf86-video-qxl
++xf86-video-intel
++xf86-video-amdgpu
++nvidia
++nvidia-utils
++mesa
++mesa-utils
++xorg
++bcachefs-tools-git
++wayland
++rustup
++patch
++sqlite3
++openal
++sdl2
++luajit
++harfbuzz
++libxkbcommon
++ffmpeg
++libvncserver
++mupdf
++adb
++openxr
++nix
++python
++vulkan-intel
++vulkan-icd-loader
++eigen
++glslang
++libusb
++v4l-utils
++libxcb
++xcb-util
++git
++dnsutils
++avahi
++dialog
++acpi
++acpid
++gvfs
++gvfs-smb
++inetutils
++os-prober
++pipewire
++pipewire-jack
++pipewire-alsa
++pipewire-pulse
++wget
++xdg-user-dirs
++xdg-utils

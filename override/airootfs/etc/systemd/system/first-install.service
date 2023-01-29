@@ -1,0 +1,10 @@
+[Unit]
+Description=First Time Boot
+After=network.target
+[Service]
+Type=oneshot
+User=root
+ExecStart=/usr/local/bin/firstboot
+
+[Install]
+WantedBy=multi-user.target

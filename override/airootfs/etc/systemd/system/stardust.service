@@ -1,0 +1,13 @@
+[Unit]
+Description=Stardust XR Server Service
+After=wivrn.service
+StartLimitIntervalSec=0
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=root
+ExecStart=/usr/local/bin/stardust
+
+[Install]
+WantedBy=multi-user.target
