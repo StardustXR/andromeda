@@ -1,0 +1,4 @@
+root:x:0:root
+adm:x:4:xrdev
+wheel:x:10:xrdev
+xrdev:x:1000:
