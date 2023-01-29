@@ -4,8 +4,13 @@
 set -euo pipefail
 IFS=$'\n'
 
+dir="$(dirname $(readlink -f $0))"
+
 function has_tmpfs() {
-    mount | awk '{if ($3 == "$PWD/work/") { exit 0}} ENDFILE{exit -1}'
+    for path in $(mount | grep -oP '(?<=on ).+(?= type)'); do
+        [ "$(readlink -f $path)" = "$dir/work" ] && return 0
+    done
+    return 1
 }
 
 chaoticaur_key=FBA220DFC880C036
@@ -14,9 +19,9 @@ read -p 'update profile before building? (Y/n) ' res
 [ "$res" = n ] || [ "$res" = N ] || ./patch.sh && echo
 
 has_tmpfs || {
-    mkdir -p work/
+    mkdir -p work
     echo 'Mounting work/ as tmpfs...'
-    sudo mount -t tmpfs tmpfs work/
+    sudo mount -t tmpfs tmpfs work
 }
 
 $(pacman-key --list-sigs $chaoticaur_key &>/dev/null) || {
@@ -32,5 +37,5 @@ sudo mkarchiso -v -w work/ profile/
 
 has_tmpfs && {
     echo 'Unmounting work/...'
-    sudo umount work/
-}
+    sudo umount work
+} || exit
