@@ -30,7 +30,7 @@ cp -r /usr/share/archiso/configs/$profile/ profile/
 pushd override/ &>/dev/null
 echo "Applying overrides..."
 find \( -type l -o -type f \) -not -name "*:diff" -not -name "*:rm" -exec \
-    cp -P {} ../profile/{} \; $($verbose && echo -print)
+    sh -c 'mkdir -p ../profile/$(dirname {}) && cp -P {} ../profile/{}' \; $($verbose && echo -print)
 $verbose && echo
 
 echo "Applying patches..."
