@@ -1,5 +1,5 @@
---- packages.x86_64	2023-01-29 14:58:36.236979227 -0400
-+++ packages.x86_64_	2023-01-29 15:40:48.261976954 -0400
+--- packages.x86_64	2023-01-30 01:50:18.197944131 -0400
++++ packages.x86_64_	2023-01-30 14:15:30.024193860 -0400
 @@ -1,58 +1,84 @@
 +acpi
 +acpid
@@ -91,7 +91,7 @@
  lvm2
  lynx
  man-db
-@@ -61,43 +87,66 @@
+@@ -61,43 +87,67 @@
  mdadm
  memtest86+
  memtest86+-efi
@@ -121,6 +121,7 @@
 +okular
 +openal
  openconnect
++opendoas
 +open-iscsi
  openssh
 +open-vm-tools
@@ -160,7 +161,7 @@
  squashfs-tools
  sudo
  syslinux
-@@ -111,13 +160,24 @@
+@@ -111,13 +161,24 @@
  usb_modeswitch
  usbmuxd
  usbutils
