@@ -1,189 +1,185 @@
---- packages.x86_64	2023-01-30 01:50:18.197944131 -0400
-+++ packages.x86_64_	2023-01-30 14:15:30.024193860 -0400
-@@ -1,58 +1,84 @@
-+acpi
-+acpid
-+adb
- alsa-utils
- amd-ucode
--arch-install-scripts
--archinstall
-+ark
-+avahi
- b43-fwcutter
- base
- bind
-+bluez
-+bluez-utils
- brltty
- broadcom-wl
- btrfs-progs
--clonezilla
--cloud-init
- cryptsetup
-+cups
- darkhttpd
- ddrescue
- dhclient
--dhcpcd
-+dialog
- diffutils
- dmidecode
- dmraid
- dnsmasq
-+dnsutils
-+dolphin
- dosfstools
-+dragon
- e2fsprogs
- edk2-shell
- efibootmgr
-+eigen
-+elisa
- espeakup
- ethtool
- exfatprogs
- f2fs-tools
- fatresize
-+ffmpeg
-+firefox
- fsarchiver
-+git
-+glslang
- gnu-netcat
- gpart
- gpm
- gptfdisk
- grml-zsh-config
- grub
-+gvfs
-+gvfs-smb
-+gwenview
-+harfbuzz
- hdparm
- hyperv
-+inetutils
- intel-ucode
- irssi
- iw
- iwd
- jfsutils
-+kate
-+kbackup
- kitty-terminfo
-+konsole
- less
- lftp
- libfido2
-+libusb
- libusb-compat
--linux
-+libvncserver
-+libxcb
-+libxkbcommon
- linux-atm
- linux-firmware
- linux-firmware-marvell
-+linux-zen
- livecd-sounds
- lsscsi
-+luajit
- lvm2
- lynx
- man-db
-@@ -61,43 +87,67 @@
- mdadm
- memtest86+
- memtest86+-efi
-+mesa
-+mesa-utils
- mkinitcpio
- mkinitcpio-archiso
- mkinitcpio-nfs-utils
- modemmanager
- mtools
-+mupdf
- nano
- nbd
- ndisc6
-+networkmanager
-+network-manager-applet
- nfs-utils
- nilfs-utils
-+nix
- nmap
- ntfs-3g
-+nvidia
-+nvidia-utils
- nvme-cli
--open-iscsi
--open-vm-tools
-+okular
-+openal
- openconnect
-+opendoas
-+open-iscsi
- openssh
-+open-vm-tools
- openvpn
-+openxr
-+os-prober
- partclone
- parted
- partimage
-+patch
- pcsclite
-+pipewire
-+pipewire-alsa
-+pipewire-jack
-+pipewire-pulse
-+plasma
- ppp
- pptpclient
- pv
-+python
- qemu-guest-agent
- refind
- reflector
- reiserfsprogs
- rp-pppoe
- rsync
-+rustup
- rxvt-unicode-terminfo
- screen
-+sddm
-+sdl2
- sdparm
- sg3_utils
- smartmontools
- sof-firmware
-+sqlite3
- squashfs-tools
- sudo
- syslinux
-@@ -111,13 +161,24 @@
- usb_modeswitch
- usbmuxd
- usbutils
-+v4l-utils
- vim
--virtualbox-guest-utils-nox
- vpnc
-+vulkan-icd-loader
-+vulkan-intel
-+wayland
-+wget
- wireless-regdb
- wireless_tools
- wpa_supplicant
- wvdial
-+xcb-util
-+xdg-user-dirs
-+xdg-utils
-+xf86-video-amdgpu
-+xf86-video-intel
-+xf86-video-qxl
- xfsprogs
- xl2tpd
-+xorg
- zsh
+0a1,3
+> acpi
+> acpid
+> adb
+3,4c6,7
+< arch-install-scripts
+< archinstall
+---
+> ark
+> avahi
+7a11,12
+> bluez
+> bluez-utils
+11,12d15
+< clonezilla
+< cloud-init
+13a17
+> cups
+17c21
+< dhcpcd
+---
+> dialog
+21a26,27
+> dnsutils
+> dolphin
+22a29
+> dragon
+25a33,34
+> eigen
+> elisa
+30a40,41
+> ffmpeg
+> firefox
+31a43,44
+> git
+> glslang
+37a51,54
+> gvfs
+> gvfs-smb
+> gwenview
+> harfbuzz
+39a57
+> inetutils
+44a63,64
+> kate
+> kbackup
+45a66
+> konsole
+48a70
+> libusb
+50c72,74
+< linux
+---
+> libvncserver
+> libxcb
+> libxkbcommon
+53a78
+> linux-zen
+55a81
+> luajit
+63a90,91
+> mesa
+> mesa-utils
+68a97
+> mupdf
+71a101,102
+> networkmanager
+> network-manager-applet
+73a105
+> nix
+75a108,109
+> nvidia
+> nvidia-utils
+77,78c111,112
+< open-iscsi
+< open-vm-tools
+---
+> okular
+> openal
+79a114,115
+> opendoas
+> open-iscsi
+80a117
+> open-vm-tools
+81a119,120
+> openxr
+> os-prober
+84a124
+> patch
+85a126,130
+> pipewire
+> pipewire-alsa
+> pipewire-jack
+> pipewire-pulse
+> plasma
+88a134
+> python
+94a141
+> rustup
+96a144,145
+> sddm
+> sdl2
+100a150
+> sqlite3
+113a164
+> v4l-utils
+115d165
+< virtualbox-guest-utils-nox
+116a167,170
+> vulkan-icd-loader
+> vulkan-intel
+> wayland
+> wget
+120a175,180
+> xcb-util
+> xdg-user-dirs
+> xdg-utils
+> xf86-video-amdgpu
+> xf86-video-intel
+> xf86-video-qxl
+122a183
+> xorg
+123a185,246
+> glibc
+> dav1d
+> xvidcore
+> zimg
+> libsoxr
+> libssh
+> libtasn1
+> nettle
+> gmp
+> openssl
+> glib2
+> libffi
+> graphite
+> fribidi
+> libva
+> srt
+> libvpx
+> xz
+> lame
+> opus
+> libopusenc
+> zlib
+> speex
+> libtheora
+> libvorbis
+> x264
+> x265
+> libvdpau
+> libdrm
+> freetype2
+> gnutls
+> libass
+> libpng
+> brotli
+> libgpg-error
+> p11-kit
+> libidn2
+> libunistring
+> libgccjit
+> expat
+> bzip2
+> libcap
+> libgcrypt
+> zstd
+> dbus
+> libogg
+> numactl
+> lz4
+> pcre2
+> clang
+> cmake
+> wget
+> ninja
+> gcc
+> pkgconf
+> nlohmann-json
+> glslang
+> python3
+> vulkan-headers
+> android-tools
+> pkg-config
+> htop

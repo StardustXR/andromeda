@@ -1,6 +1,6 @@
---- grub.cfg	2023-01-29 14:58:36.237979227 -0400
-+++ grub.cfg_	2023-01-30 01:40:55.448944637 -0400
-@@ -30,14 +30,14 @@
+--- ../../../releng/grub/grub.cfg	2023-02-06 19:47:26.837193524 -0500
++++ grub.cfg	2023-02-07 18:08:33.496774976 -0500
+@@ -30,14 +30,21 @@
  
  # Menu entries
  
@@ -13,11 +13,18 @@
  }
  
 -menuentry "Arch Linux install medium with speakup screen reader (x86_64, UEFI)" --hotkey s --class arch --class gnu-linux --class gnu --class os --id 'archlinux-accessibility' {
++menuentry "Andromeda test environment" --class arch --class gnu-linux --class gnu --class os --id 'archlinux' {
++    set gfxpayload=keep
++    search --no-floppy --set=root --label %ARCHISO_LABEL%
++    linux /%INSTALL_DIR%/boot/x86_64/vmlinuz-linux archisobasedir=%INSTALL_DIR% archisolabel=%ARCHISO_LABEL% systemd.unit=multi-user.target
++    initrd /%INSTALL_DIR%/boot/intel-ucode.img /%INSTALL_DIR%/boot/amd-ucode.img /%INSTALL_DIR%/boot/x86_64/initramfs-linux.img
++}
++
 +menuentry "Andromeda development environment (screen reader)" --hotkey s --class arch --class gnu-linux --class gnu --class os --id 'archlinux-accessibility' {
      set gfxpayload=keep
      search --no-floppy --set=root --label %ARCHISO_LABEL%
      linux /%INSTALL_DIR%/boot/x86_64/vmlinuz-linux archisobasedir=%INSTALL_DIR% archisolabel=%ARCHISO_LABEL% accessibility=on
-@@ -46,7 +46,7 @@
+@@ -46,7 +53,7 @@
  
  if [ "${grub_platform}" == "efi" ]; then
      if [ "${grub_cpu}" == "x86_64" ]; then
@@ -26,7 +33,7 @@
              set gfxpayload=800x600,1024x768
              search --fs-uuid --no-floppy --set=root --label %ARCHISO_LABEL%
              linux /%INSTALL_DIR%/boot/memtest.efi
-@@ -69,12 +69,12 @@
+@@ -69,12 +76,12 @@
      }
  fi
  

@@ -1,0 +1,4 @@
+3c3
+< ExecStart=-/sbin/agetty -o '-p -f -- \\u' --noclear --autologin root - $TERM
+---
+> ExecStart=-/sbin/agetty -o '-p -f -- \\u' --noclear --autologin login - $TERM
