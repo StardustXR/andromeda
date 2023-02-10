@@ -1,0 +1,2 @@
+cargo:rustc-link-lib=pam
+cargo:rustc-link-lib=pam_misc

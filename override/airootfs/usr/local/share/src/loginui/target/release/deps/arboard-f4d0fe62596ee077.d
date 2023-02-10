@@ -1,0 +1,11 @@
+/home/bc/repos/stardust/andromeda/override/airootfs/usr/local/share/src/loginui/target/release/deps/arboard-f4d0fe62596ee077.rmeta: /home/bc/.cargo/registry/src/github.com-1ecc6299db9ec823/arboard-3.2.0/src/lib.rs /home/bc/.cargo/registry/src/github.com-1ecc6299db9ec823/arboard-3.2.0/src/common.rs /home/bc/.cargo/registry/src/github.com-1ecc6299db9ec823/arboard-3.2.0/src/platform/mod.rs /home/bc/.cargo/registry/src/github.com-1ecc6299db9ec823/arboard-3.2.0/src/platform/linux/mod.rs /home/bc/.cargo/registry/src/github.com-1ecc6299db9ec823/arboard-3.2.0/src/platform/linux/x11.rs
+
+/home/bc/repos/stardust/andromeda/override/airootfs/usr/local/share/src/loginui/target/release/deps/libarboard-f4d0fe62596ee077.rlib: /home/bc/.cargo/registry/src/github.com-1ecc6299db9ec823/arboard-3.2.0/src/lib.rs /home/bc/.cargo/registry/src/github.com-1ecc6299db9ec823/arboard-3.2.0/src/common.rs /home/bc/.cargo/registry/src/github.com-1ecc6299db9ec823/arboard-3.2.0/src/platform/mod.rs /home/bc/.cargo/registry/src/github.com-1ecc6299db9ec823/arboard-3.2.0/src/platform/linux/mod.rs /home/bc/.cargo/registry/src/github.com-1ecc6299db9ec823/arboard-3.2.0/src/platform/linux/x11.rs
+
+/home/bc/repos/stardust/andromeda/override/airootfs/usr/local/share/src/loginui/target/release/deps/arboard-f4d0fe62596ee077.d: /home/bc/.cargo/registry/src/github.com-1ecc6299db9ec823/arboard-3.2.0/src/lib.rs /home/bc/.cargo/registry/src/github.com-1ecc6299db9ec823/arboard-3.2.0/src/common.rs /home/bc/.cargo/registry/src/github.com-1ecc6299db9ec823/arboard-3.2.0/src/platform/mod.rs /home/bc/.cargo/registry/src/github.com-1ecc6299db9ec823/arboard-3.2.0/src/platform/linux/mod.rs /home/bc/.cargo/registry/src/github.com-1ecc6299db9ec823/arboard-3.2.0/src/platform/linux/x11.rs
+
+/home/bc/.cargo/registry/src/github.com-1ecc6299db9ec823/arboard-3.2.0/src/lib.rs:
+/home/bc/.cargo/registry/src/github.com-1ecc6299db9ec823/arboard-3.2.0/src/common.rs:
+/home/bc/.cargo/registry/src/github.com-1ecc6299db9ec823/arboard-3.2.0/src/platform/mod.rs:
+/home/bc/.cargo/registry/src/github.com-1ecc6299db9ec823/arboard-3.2.0/src/platform/linux/mod.rs:
+/home/bc/.cargo/registry/src/github.com-1ecc6299db9ec823/arboard-3.2.0/src/platform/linux/x11.rs:
