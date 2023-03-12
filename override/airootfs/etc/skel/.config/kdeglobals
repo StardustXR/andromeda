@@ -24,13 +24,13 @@ IntensityAmount=0
 IntensityEffect=0
 
 [Colors:Button]
-BackgroundAlternate=101,53,138
+BackgroundAlternate=127,70,168
 BackgroundNormal=49,54,59
-DecorationFocus=124,53,173
-DecorationHover=124,53,173
-ForegroundActive=124,53,173
+DecorationFocus=161,78,216
+DecorationHover=161,78,216
+ForegroundActive=161,78,216
 ForegroundInactive=161,169,177
-ForegroundLink=124,53,173
+ForegroundLink=161,78,216
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=252,252,252
@@ -40,11 +40,11 @@ ForegroundVisited=155,89,182
 [Colors:Complementary]
 BackgroundAlternate=30,87,116
 BackgroundNormal=42,46,50
-DecorationFocus=124,53,173
-DecorationHover=124,53,173
-ForegroundActive=124,53,173
+DecorationFocus=161,78,216
+DecorationHover=161,78,216
+ForegroundActive=161,78,216
 ForegroundInactive=161,169,177
-ForegroundLink=124,53,173
+ForegroundLink=161,78,216
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=252,252,252
@@ -54,11 +54,11 @@ ForegroundVisited=155,89,182
 [Colors:Header]
 BackgroundAlternate=42,46,50
 BackgroundNormal=49,54,59
-DecorationFocus=124,53,173
-DecorationHover=124,53,173
-ForegroundActive=124,53,173
+DecorationFocus=161,78,216
+DecorationHover=161,78,216
+ForegroundActive=161,78,216
 ForegroundInactive=161,169,177
-ForegroundLink=124,53,173
+ForegroundLink=161,78,216
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=252,252,252
@@ -80,13 +80,13 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [Colors:Selection]
-BackgroundAlternate=94,46,130
-BackgroundNormal=94,46,130
-DecorationFocus=124,53,173
-DecorationHover=124,53,173
-ForegroundActive=124,53,173
+BackgroundAlternate=120,63,160
+BackgroundNormal=120,63,160
+DecorationFocus=161,78,216
+DecorationHover=161,78,216
+ForegroundActive=161,78,216
 ForegroundInactive=255,255,255
-ForegroundLink=124,53,173
+ForegroundLink=161,78,216
 ForegroundNegative=176,55,69
 ForegroundNeutral=198,92,0
 ForegroundNormal=255,255,255
@@ -96,11 +96,11 @@ ForegroundVisited=155,89,182
 [Colors:Tooltip]
 BackgroundAlternate=42,46,50
 BackgroundNormal=49,54,59
-DecorationFocus=124,53,173
-DecorationHover=124,53,173
-ForegroundActive=124,53,173
+DecorationFocus=161,78,216
+DecorationHover=161,78,216
+ForegroundActive=161,78,216
 ForegroundInactive=161,169,177
-ForegroundLink=124,53,173
+ForegroundLink=161,78,216
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=252,252,252
@@ -110,11 +110,11 @@ ForegroundVisited=155,89,182
 [Colors:View]
 BackgroundAlternate=35,38,41
 BackgroundNormal=27,30,32
-DecorationFocus=124,53,173
-DecorationHover=124,53,173
-ForegroundActive=124,53,173
+DecorationFocus=161,78,216
+DecorationHover=161,78,216
+ForegroundActive=161,78,216
 ForegroundInactive=161,169,177
-ForegroundLink=124,53,173
+ForegroundLink=161,78,216
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=252,252,252
@@ -124,11 +124,11 @@ ForegroundVisited=155,89,182
 [Colors:Window]
 BackgroundAlternate=49,54,59
 BackgroundNormal=42,46,50
-DecorationFocus=124,53,173
-DecorationHover=124,53,173
-ForegroundActive=124,53,173
+DecorationFocus=161,78,216
+DecorationHover=161,78,216
+ForegroundActive=161,78,216
 ForegroundInactive=161,169,177
-ForegroundLink=124,53,173
+ForegroundLink=161,78,216
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
 ForegroundNormal=252,252,252
@@ -136,13 +136,9 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [General]
-AccentColor=124,53,173
+AccentColor=161,78,216
 ColorSchemeHash=d2f9f23c62b2c7529878a3b4c96c2902e98086db
-XftHintStyle=hintslight
-XftSubPixel=rgb
-accentColorFromWallpaper=true
-fixed=Source Code Pro,10,-1,5,50,0,0,0,0,0
-font=Noto Sans,10,-1,5,50,0,0,0,0,0
+LastUsedCustomAccentColor=161,78,216
 
 [KDE]
 LookAndFeelPackage=org.kde.breezedark.desktop
@@ -164,13 +160,12 @@ Sort by=Name
 Sort directories first=true
 Sort hidden files last=false
 Sort reversed=false
-Speedbar Width=133
+Speedbar Width=138
 View Style=DetailTree
 
 [WM]
 activeBackground=49,54,59
 activeBlend=252,252,252
-activeFont=Noto Sans,10,-1,5,50,0,0,0,0,0
 activeForeground=252,252,252
 inactiveBackground=42,46,50
 inactiveBlend=161,169,177

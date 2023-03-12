@@ -6,10 +6,7 @@ wheel:Vertical;NoModifier=org.kde.switchdesktop
 RightButton;NoModifier=org.kde.contextmenu
 
 [Containments][1]
-ItemGeometries-934x1011=
-ItemGeometriesHorizontal=
-ItemGeometriesVertical=
-activityId=0cb57768-966f-41db-af1f-b59fddecf940
+activityId=503cac19-c71c-48ae-94c5-c71dfc12db95
 formfactor=0
 immutability=1
 lastScreen=0
@@ -18,12 +15,9 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][1][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
 
 [Containments][1][Wallpaper][org.kde.image][General]
 Image=/usr/local/share/andromeda/andromeda_wallpaper.png
-SlidePaths=/usr/share/wallpapers/
 
 [Containments][2]
 activityId=
@@ -48,8 +42,6 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][2][Applets][3][Configuration]
 PreloadWeight=100
-popupHeight=518
-popupWidth=647
 
 [Containments][2][Applets][3][Configuration][General]
 favoritesPortedToKAstats=true
