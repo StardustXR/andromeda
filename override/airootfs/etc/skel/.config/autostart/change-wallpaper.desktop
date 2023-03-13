@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Icon=folder
+Name=Set Andromeda wallpaper
+Exec=/usr/local/lib/andromeda/change-wallpaper.sh
+Terminal=false
+Hidden=false

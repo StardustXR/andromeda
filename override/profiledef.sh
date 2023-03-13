@@ -20,6 +20,7 @@ file_permissions=(
   ["/etc/gshadow"]="0:0:400"
   ["/etc/sudoers"]="0:0:440"
   ["/etc/doas.conf"]="0:0:440"
+  ["/usr/local/lib/andromeda/change-wallpaper.sh"]="0:0:755"
   ["/root"]="0:0:750"
   ["/root/.automated_script.sh"]="0:0:755"
   ["/usr/local/bin/choose-mirror"]="0:0:755"
