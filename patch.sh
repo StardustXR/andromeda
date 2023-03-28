@@ -2,7 +2,7 @@
 
 #? safer bash options
 set -euo pipefail
-IFS=$'\n'
+export IFS=$'\n'
 
 #? variables
 profile=releng
